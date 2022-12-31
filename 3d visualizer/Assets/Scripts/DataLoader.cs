@@ -27,18 +27,23 @@ public class DataLoader : MonoBehaviour
 
     public void GetCSVAndParsing(string url)
     {
+        GameManager.Instance.tokyoCrawlList.Clear();
         HttpWebRequest req = (HttpWebRequest)WebRequest.Create(url);
         HttpWebResponse resp = (HttpWebResponse)req.GetResponse();
         using (StreamReader sr = new StreamReader(resp.GetResponseStream()))
         using (CsvReader csv = new CsvReader(sr, CultureInfo.InvariantCulture)) {
             // csv.ReadHeader();
-            csv.Read();
-            TokyoCrawlModel model = csv.GetRecord<TokyoCrawlModel>();
-            Debug.Log("test: " + csv.GetField<string>(4) + ", " + model.location + ", " + model.area + ", " + model.category);
-            Debug.Log("loaded csv len: " + csv.ColumnCount.ToString());
-            csv.Read();
-            Debug.Log("test: " + csv.GetField<string>(4));
-            Debug.Log("loaded csv len: " + csv.ColumnCount.ToString());
+            // csv.Read();
+            while(csv.Read()) {
+                TokyoCrawlModel model = csv.GetRecord<TokyoCrawlModel>();
+                // Debug.Log("test: " + csv.GetField<string>(4) + ", " + model.location + ", " + model.area + ", " + model.category);
+                GameManager.Instance.tokyoCrawlList.Add(model);
+            }
+            Debug.Log("List loaded len: " + GameManager.Instance.tokyoCrawlList.Count.ToString());
+            // Debug.Log("loaded csv len: " + csv.ColumnCount.ToString());
+            // csv.Read();
+            // Debug.Log("test: " + csv.GetField<string>(4));
+            // Debug.Log("loaded csv len: " + csv.ColumnCount.ToString());
         }
     } 
 }

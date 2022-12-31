@@ -1,6 +1,6 @@
 using CsvHelper.Configuration.Attributes;
 
-class TokyoCrawlModel {
+public class TokyoCrawlModel {
     public string idx {get; set;}
     public string location {get; set;}
     [Name("location-url")]
