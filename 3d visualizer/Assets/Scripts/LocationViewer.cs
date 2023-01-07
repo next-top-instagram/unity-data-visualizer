@@ -8,6 +8,8 @@ using System;
 public class LocationViewer : MonoBehaviour
 {
     public Image image;
+    public List<String> imgUrls = new List<String>();
+    public Sprite defaultSpriteImg;
 
     IEnumerator SetImageFromURL(string url, System.Action<Texture> callback) {
         UnityWebRequest www = UnityWebRequestTexture.GetTexture(url);
@@ -80,19 +82,35 @@ public class LocationViewer : MonoBehaviour
         return bgSprite;
     }
 
+    public void RenderImage(int idx) {
+        if (imgUrls.Count <= 0) {
+            Debug.Log("Empty img url list");
+            image.sprite = defaultSpriteImg;
+        } else {
+            StartCoroutine(SetImageFromURL(imgUrls[idx % imgUrls.Count], (texture) => {
+                if(texture) {
+                    float w = image.GetComponent<RectTransform>().rect.width;
+                    float h = image.GetComponent<RectTransform>().rect.height;
+                    Debug.Log("w: " + w.ToString() + " h: " + h.ToString());
+                    image.sprite = ConvertTextureToSprite((Texture2D)texture, w, h);
+                }
+            }));
+        }
+    }
+
     private void Start() {
         // vertical sample
         // https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmVydGljYWx8ZW58MHx8MHx8&w=1000&q=80
         // horizontal sample
         // https://www.albert.io/blog/wp-content/uploads/2021/07/horizon-1024x550.jpg
-        StartCoroutine(SetImageFromURL("https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmVydGljYWx8ZW58MHx8MHx8&w=1000&q=80", (texture) => {
-            if(texture) {
-                float w = image.GetComponent<RectTransform>().rect.width;
-                float h = image.GetComponent<RectTransform>().rect.height;
-                Debug.Log("w: " + w.ToString() + " h: " + h.ToString());
-                image.sprite = ConvertTextureToSprite((Texture2D)texture, w, h);
-            }
-        }));
+        // StartCoroutine(SetImageFromURL("https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmVydGljYWx8ZW58MHx8MHx8&w=1000&q=80", (texture) => {
+        //     if(texture) {
+        //         float w = image.GetComponent<RectTransform>().rect.width;
+        //         float h = image.GetComponent<RectTransform>().rect.height;
+        //         Debug.Log("w: " + w.ToString() + " h: " + h.ToString());
+        //         image.sprite = ConvertTextureToSprite((Texture2D)texture, w, h);
+        //     }
+        // }));
     }
 
 }

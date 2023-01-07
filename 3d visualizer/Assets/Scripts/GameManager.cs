@@ -20,4 +20,12 @@ public class GameManager : MonoBehaviour
         _instance = this;
         tokyoCrawlList = new List<TokyoCrawlModel>();
     }
+
+    public List<TokyoCrawlModel> FilterTokyoCrawlListByLocation(string location) {
+        return tokyoCrawlList.Where(data => data.location == location);
+    }
+
+    // public List<TokyoCrawlModel> GetAreaGroupByTokyoCrawlListLocation(String location) {
+        
+    // }
 }
