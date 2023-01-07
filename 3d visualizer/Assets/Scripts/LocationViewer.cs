@@ -33,9 +33,11 @@ public class LocationViewer : MonoBehaviour
         Debug.Log("src len" + srcTextureColor.Length.ToString() + " bg len" + bgSpriteColor.Length.ToString());
         Debug.Log("src " + srcTexture.width.ToString() + " x " + srcTexture.height.ToString());
         Debug.Log("bg " + bgSprite.texture.width.ToString() + " x " + bgSprite.texture.height.ToString());
+        int scale = (int)Mathf.Min(renderWidth / srcTexture.width, renderHeight / srcTexture.height);
+        Debug.Log("scale: " + scale.ToString());
 
-        int srcTextureXStartPoint = (int)(renderWidth - srcTexture.width) / 2;
-        int srcTextureYStartPoint = (int)(renderHeight - srcTexture.height) / 2;
+        int srcTextureXStartPoint = (int)(renderWidth - srcTexture.width * scale) / 2;
+        int srcTextureYStartPoint = (int)(renderHeight - srcTexture.height * scale) / 2;
 
         Debug.Log("x start" + srcTextureXStartPoint.ToString() + " y " + srcTextureYStartPoint.ToString());
         // for(int i = 0; i < bgSpriteColor.Length; i ++) {
@@ -47,12 +49,18 @@ public class LocationViewer : MonoBehaviour
         //             bgSpriteColor[y * SOURCE_SIZE + x] = srcTextureColor[];
         //         }
         // }
-        for(int i = 0; i < srcTextureColor.Length; i ++) {
-            int x = i % srcTexture.width;
-            int y = i / srcTexture.width;
+        Color fillColor = Color.clear;
+        for(int i = 0; i < bgSpriteColor.Length; i ++) {
+            bgSpriteColor[i] = fillColor;
+        }
+        for(int i = 0; i < srcTextureColor.Length * Mathf.Pow(scale, 2); i ++) {
+            int x = i % (srcTexture.width * scale);
+            int y = i / (srcTexture.width * scale);
             try {
-                bgSpriteColor[(y + srcTextureYStartPoint) * SOURCE_SIZE + srcTextureXStartPoint + x] = srcTextureColor[y * srcTexture.width + x];
-                // bgSpriteColor[(srcTextureYStartPoint + y) * SOURCE_SIZE + srcTextureXStartPoint + x] = Color.black;
+                // 
+                bgSpriteColor[(y + srcTextureYStartPoint) * SOURCE_SIZE + srcTextureXStartPoint + x] = srcTextureColor[(int)y / scale * srcTexture.width + (int)x / scale];
+                // bgSpriteColor[(srcTextureYStartPoint + y) * SOURCE_SIZE + 
+                // srcTextureXStartPoint + x] = Color.black;
             } catch (Exception e) {
                 Debug.Log("x " + x.ToString() + " y " + y.ToString() + " idx " + ((srcTextureYStartPoint + y) * SOURCE_SIZE + srcTextureXStartPoint + x).ToString());
                 break;
@@ -67,7 +75,11 @@ public class LocationViewer : MonoBehaviour
     }
 
     private void Start() {
-        StartCoroutine(SetImageFromURL("https://developer.mozilla.org/en-US/docs/Web/API/CanvasRenderingContext2D/drawImage/canvas_drawimage.jpg", (texture) => {
+        // vertical sample
+        // https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmVydGljYWx8ZW58MHx8MHx8&w=1000&q=80
+        // horizontal sample
+        // https://www.albert.io/blog/wp-content/uploads/2021/07/horizon-1024x550.jpg
+        StartCoroutine(SetImageFromURL("https://images.unsplash.com/photo-1526512340740-9217d0159da9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8dmVydGljYWx8ZW58MHx8MHx8&w=1000&q=80", (texture) => {
             if(texture) {
                 float w = image.GetComponent<RectTransform>().rect.width;
                 float h = image.GetComponent<RectTransform>().rect.height;
