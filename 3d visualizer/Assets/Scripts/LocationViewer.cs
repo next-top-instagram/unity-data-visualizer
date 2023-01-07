@@ -8,8 +8,10 @@ using System;
 public class LocationViewer : MonoBehaviour
 {
     public Image image;
-    public List<String> imgUrls = new List<String>();
+    public List<string> imgUrls = new List<string>();
     public Sprite defaultSpriteImg;
+
+    private int imgViewIdx = 0;
 
     IEnumerator SetImageFromURL(string url, System.Action<Texture> callback) {
         UnityWebRequest www = UnityWebRequestTexture.GetTexture(url);
@@ -84,9 +86,11 @@ public class LocationViewer : MonoBehaviour
 
     public void RenderImage(int idx) {
         if (imgUrls.Count <= 0) {
+            imgViewIdx = 0;
             Debug.Log("Empty img url list");
             image.sprite = defaultSpriteImg;
         } else {
+            imgViewIdx = idx % imgUrls.Count;
             StartCoroutine(SetImageFromURL(imgUrls[idx % imgUrls.Count], (texture) => {
                 if(texture) {
                     float w = image.GetComponent<RectTransform>().rect.width;
@@ -96,6 +100,14 @@ public class LocationViewer : MonoBehaviour
                 }
             }));
         }
+    }
+
+    public void RenderNextImg() {
+        RenderImage(imgViewIdx + 1);
+    }
+
+    public void RenderPrevImg() {
+        RenderImage(imgViewIdx - 1 + imgUrls.Count);
     }
 
     private void Start() {

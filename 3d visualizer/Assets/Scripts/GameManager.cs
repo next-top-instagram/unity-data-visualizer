@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using System.Linq;
 
 public class GameManager : MonoBehaviour
 {
@@ -22,10 +23,10 @@ public class GameManager : MonoBehaviour
     }
 
     public List<TokyoCrawlModel> FilterTokyoCrawlListByLocation(string location) {
-        return tokyoCrawlList.Where(data => data.location == location);
+        return tokyoCrawlList.Where(data => data.location == location).ToList();
     }
 
-    // public List<TokyoCrawlModel> GetAreaGroupByTokyoCrawlListLocation(String location) {
-        
-    // }
+    public List<string> GetImageUrlListFromTokyoCrawlListFilterByLocation(string location) {
+        return FilterTokyoCrawlListByLocation(location).Where(data => data.content_img.Contains("https")).Select(data => data.content_img).ToList();
+    }
 }
