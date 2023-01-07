@@ -34,8 +34,8 @@ public class LocationViewer : MonoBehaviour
         Debug.Log("src " + srcTexture.width.ToString() + " x " + srcTexture.height.ToString());
         Debug.Log("bg " + bgSprite.texture.width.ToString() + " x " + bgSprite.texture.height.ToString());
 
-        int srcTextureXStartPoint = (SOURCE_SIZE - srcTexture.width) / 2;
-        int srcTextureYStartPoint = (SOURCE_SIZE - srcTexture.height) / 2;
+        int srcTextureXStartPoint = (int)(renderWidth - srcTexture.width) / 2;
+        int srcTextureYStartPoint = (int)(renderHeight - srcTexture.height) / 2;
 
         Debug.Log("x start" + srcTextureXStartPoint.ToString() + " y " + srcTextureYStartPoint.ToString());
         // for(int i = 0; i < bgSpriteColor.Length; i ++) {
@@ -51,7 +51,7 @@ public class LocationViewer : MonoBehaviour
             int x = i % srcTexture.width;
             int y = i / srcTexture.width;
             try {
-                bgSpriteColor[(y + (int)renderHeight / 2) * SOURCE_SIZE + (int)renderWidth / 2 + x] = srcTextureColor[y * srcTexture.width + x];
+                bgSpriteColor[(y + srcTextureYStartPoint) * SOURCE_SIZE + srcTextureXStartPoint + x] = srcTextureColor[y * srcTexture.width + x];
                 // bgSpriteColor[(srcTextureYStartPoint + y) * SOURCE_SIZE + srcTextureXStartPoint + x] = Color.black;
             } catch (Exception e) {
                 Debug.Log("x " + x.ToString() + " y " + y.ToString() + " idx " + ((srcTextureYStartPoint + y) * SOURCE_SIZE + srcTextureXStartPoint + x).ToString());
