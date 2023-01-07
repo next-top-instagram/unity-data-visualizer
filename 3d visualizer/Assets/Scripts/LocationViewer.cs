@@ -51,7 +51,7 @@ public class LocationViewer : MonoBehaviour
             int x = i % srcTexture.width;
             int y = i / srcTexture.width;
             try {
-                bgSpriteColor[(srcTextureYStartPoint + y) * SOURCE_SIZE + srcTextureXStartPoint + x] = srcTextureColor[y * srcTexture.width + x];
+                bgSpriteColor[(y + (int)renderHeight / 2) * SOURCE_SIZE + (int)renderWidth / 2 + x] = srcTextureColor[y * srcTexture.width + x];
                 // bgSpriteColor[(srcTextureYStartPoint + y) * SOURCE_SIZE + srcTextureXStartPoint + x] = Color.black;
             } catch (Exception e) {
                 Debug.Log("x " + x.ToString() + " y " + y.ToString() + " idx " + ((srcTextureYStartPoint + y) * SOURCE_SIZE + srcTextureXStartPoint + x).ToString());

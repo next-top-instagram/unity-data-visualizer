@@ -13,8 +13,385 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SimpleSelectedItems:
-    m_Keys: []
-    m_Values: 
+    m_Keys:
+    - .collabignore
+    - Assets/Dark UI.meta
+    - Assets/Dark UI/DarkUI.unity
+    - Assets/Dark UI/DarkUI.unity.meta
+    - Assets/Dark UI/Free.meta
+    - Assets/Dark UI/Free/128 Light 2.png
+    - Assets/Dark UI/Free/128 Light 2.png.meta
+    - Assets/Dark UI/Free/128 Light.png
+    - Assets/Dark UI/Free/128 Light.png.meta
+    - Assets/Dark UI/Free/128.png
+    - Assets/Dark UI/Free/128.png.meta
+    - Assets/Dark UI/Free/32 Light 2.png
+    - Assets/Dark UI/Free/32 Light 2.png.meta
+    - Assets/Dark UI/Free/32 Light.png
+    - Assets/Dark UI/Free/32 Light.png.meta
+    - Assets/Dark UI/Free/32.png
+    - Assets/Dark UI/Free/32.png.meta
+    - Assets/Dark UI/Free/64 Light 2.png
+    - Assets/Dark UI/Free/64 Light 2.png.meta
+    - Assets/Dark UI/Free/64 Light.png
+    - Assets/Dark UI/Free/64 Light.png.meta
+    - Assets/Dark UI/Free/64.png
+    - Assets/Dark UI/Free/64.png.meta
+    - Assets/Dark UI/Free/A.png
+    - Assets/Dark UI/Free/A.png.meta
+    - Assets/Dark UI/Free/Add Icon.png
+    - Assets/Dark UI/Free/Add Icon.png.meta
+    - Assets/Dark UI/Free/B.png
+    - Assets/Dark UI/Free/B.png.meta
+    - Assets/Dark UI/Free/BTN_A1.png
+    - Assets/Dark UI/Free/BTN_A1.png.meta
+    - Assets/Dark UI/Free/BTN_A2.png
+    - Assets/Dark UI/Free/BTN_A2.png.meta
+    - Assets/Dark UI/Free/BTN_A3.png
+    - Assets/Dark UI/Free/BTN_A3.png.meta
+    - Assets/Dark UI/Free/BTN_Line_4PX_Large.png
+    - Assets/Dark UI/Free/BTN_Line_4PX_Large.png.meta
+    - Assets/Dark UI/Free/BTN_Line_4PX_Medium.png
+    - Assets/Dark UI/Free/BTN_Line_4PX_Medium.png.meta
+    - Assets/Dark UI/Free/BTN_Line_4PX_Small.png
+    - Assets/Dark UI/Free/BTN_Line_4PX_Small.png.meta
+    - Assets/Dark UI/Free/Bell.png
+    - Assets/Dark UI/Free/Bell.png.meta
+    - Assets/Dark UI/Free/ButtonLargeRound.png
+    - Assets/Dark UI/Free/ButtonLargeRound.png.meta
+    - Assets/Dark UI/Free/ButtonMediumRound.png
+    - Assets/Dark UI/Free/ButtonMediumRound.png.meta
+    - Assets/Dark UI/Free/ButtonSmallRound.png
+    - Assets/Dark UI/Free/ButtonSmallRound.png.meta
+    - Assets/Dark UI/Free/Button_Large_A.png
+    - Assets/Dark UI/Free/Button_Large_A.png.meta
+    - Assets/Dark UI/Free/Button_Medium_A.png
+    - Assets/Dark UI/Free/Button_Medium_A.png.meta
+    - Assets/Dark UI/Free/Button_Small_A.png
+    - Assets/Dark UI/Free/Button_Small_A.png.meta
+    - Assets/Dark UI/Free/C.png
+    - Assets/Dark UI/Free/C.png.meta
+    - Assets/Dark UI/Free/CIRCLE2PXLAR.png
+    - Assets/Dark UI/Free/CIRCLE2PXLAR.png.meta
+    - Assets/Dark UI/Free/CIRCLE2PXMED.png
+    - Assets/Dark UI/Free/CIRCLE2PXMED.png.meta
+    - Assets/Dark UI/Free/CIRCLE2PXSMALL.png
+    - Assets/Dark UI/Free/CIRCLE2PXSMALL.png.meta
+    - Assets/Dark UI/Free/CIRCLE4PXLAR.png
+    - Assets/Dark UI/Free/CIRCLE4PXLAR.png.meta
+    - Assets/Dark UI/Free/CIRCLE4PXMED.png
+    - Assets/Dark UI/Free/CIRCLE4PXMED.png.meta
+    - Assets/Dark UI/Free/CIRCLE4PXSMA.png
+    - Assets/Dark UI/Free/CIRCLE4PXSMA.png.meta
+    - Assets/Dark UI/Free/Close BTN.png
+    - Assets/Dark UI/Free/Close BTN.png.meta
+    - Assets/Dark UI/Free/Coin.png
+    - Assets/Dark UI/Free/Coin.png.meta
+    - Assets/Dark UI/Free/D.png
+    - Assets/Dark UI/Free/D.png.meta
+    - Assets/Dark UI/Free/Divider.png
+    - Assets/Dark UI/Free/Divider.png.meta
+    - Assets/Dark UI/Free/Down Arrow.png
+    - Assets/Dark UI/Free/Down Arrow.png.meta
+    - Assets/Dark UI/Free/Down BTN.png
+    - Assets/Dark UI/Free/Down BTN.png.meta
+    - Assets/Dark UI/Free/E.png
+    - Assets/Dark UI/Free/E.png.meta
+    - Assets/Dark UI/Free/F.png
+    - Assets/Dark UI/Free/F.png.meta
+    - Assets/Dark UI/Free/Facebook 2.png
+    - Assets/Dark UI/Free/Facebook 2.png.meta
+    - Assets/Dark UI/Free/Facebook.png
+    - Assets/Dark UI/Free/Facebook.png.meta
+    - Assets/Dark UI/Free/Gem.png
+    - Assets/Dark UI/Free/Gem.png.meta
+    - Assets/Dark UI/Free/Heart.png
+    - Assets/Dark UI/Free/Heart.png.meta
+    - Assets/Dark UI/Free/Icon Sets.png
+    - Assets/Dark UI/Free/Icon Sets.png.meta
+    - Assets/Dark UI/Free/Info.png
+    - Assets/Dark UI/Free/Info.png.meta
+    - Assets/Dark UI/Free/InputField.png
+    - Assets/Dark UI/Free/InputField.png.meta
+    - Assets/Dark UI/Free/Inventory.png
+    - Assets/Dark UI/Free/Inventory.png.meta
+    - Assets/Dark UI/Free/Left Arrow.png
+    - Assets/Dark UI/Free/Left Arrow.png.meta
+    - Assets/Dark UI/Free/Left BTN.png
+    - Assets/Dark UI/Free/Left BTN.png.meta
+    - Assets/Dark UI/Free/Lock.png
+    - Assets/Dark UI/Free/Lock.png.meta
+    - Assets/Dark UI/Free/Messages.png
+    - Assets/Dark UI/Free/Messages.png.meta
+    - Assets/Dark UI/Free/Missions.png
+    - Assets/Dark UI/Free/Missions.png.meta
+    - Assets/Dark UI/Free/Music.png
+    - Assets/Dark UI/Free/Music.png.meta
+    - Assets/Dark UI/Free/Ranks.png
+    - Assets/Dark UI/Free/Ranks.png.meta
+    - Assets/Dark UI/Free/Right Arrow.png
+    - Assets/Dark UI/Free/Right Arrow.png.meta
+    - Assets/Dark UI/Free/Right BTN.png
+    - Assets/Dark UI/Free/Right BTN.png.meta
+    - Assets/Dark UI/Free/Settings.png
+    - Assets/Dark UI/Free/Settings.png.meta
+    - Assets/Dark UI/Free/Shop.png
+    - Assets/Dark UI/Free/Shop.png.meta
+    - Assets/Dark UI/Free/Sound.png
+    - Assets/Dark UI/Free/Sound.png.meta
+    - Assets/Dark UI/Free/Star.png
+    - Assets/Dark UI/Free/Star.png.meta
+    - Assets/Dark UI/Free/Up Arrow.png
+    - Assets/Dark UI/Free/Up Arrow.png.meta
+    - Assets/Dark UI/Free/Up BTN.png
+    - Assets/Dark UI/Free/Up BTN.png.meta
+    - Assets/Dark UI/Free/World.png
+    - Assets/Dark UI/Free/World.png.meta
+    - Assets/Dark UI/Free/X.png
+    - Assets/Dark UI/Free/X.png.meta
+    - Assets/Dark UI/Prefabs Buttons.meta
+    - Assets/Dark UI/Prefabs Buttons/Close Button.prefab
+    - Assets/Dark UI/Prefabs Buttons/Close Button.prefab.meta
+    - Assets/Dark UI/Prefabs Buttons/Content 1.prefab
+    - Assets/Dark UI/Prefabs Buttons/Content 1.prefab.meta
+    - Assets/Dark UI/Prefabs Buttons/Facebook Button.prefab
+    - Assets/Dark UI/Prefabs Buttons/Facebook Button.prefab.meta
+    - Assets/Dark UI/Prefabs Buttons/Info Button.prefab
+    - Assets/Dark UI/Prefabs Buttons/Info Button.prefab.meta
+    - Assets/Dark UI/Prefabs Buttons/Inventory Button.prefab
+    - Assets/Dark UI/Prefabs Buttons/Inventory Button.prefab.meta
+    - Assets/Dark UI/Prefabs Buttons/Item List.prefab
+    - Assets/Dark UI/Prefabs Buttons/Item List.prefab.meta
+    - Assets/Dark UI/Prefabs Buttons/Messages Button.prefab
+    - Assets/Dark UI/Prefabs Buttons/Messages Button.prefab.meta
+    - Assets/Dark UI/Prefabs Buttons/Missions Button.prefab
+    - Assets/Dark UI/Prefabs Buttons/Missions Button.prefab.meta
+    - Assets/Dark UI/Prefabs Buttons/Music.prefab
+    - Assets/Dark UI/Prefabs Buttons/Music.prefab.meta
+    - Assets/Dark UI/Prefabs Buttons/Notification.prefab
+    - Assets/Dark UI/Prefabs Buttons/Notification.prefab.meta
+    - Assets/Dark UI/Prefabs Buttons/Play Button.prefab
+    - Assets/Dark UI/Prefabs Buttons/Play Button.prefab.meta
+    - Assets/Dark UI/Prefabs Buttons/Ranking Button.prefab
+    - Assets/Dark UI/Prefabs Buttons/Ranking Button.prefab.meta
+    - Assets/Dark UI/Prefabs Buttons/Send Hearts BTN.prefab
+    - Assets/Dark UI/Prefabs Buttons/Send Hearts BTN.prefab.meta
+    - Assets/Dark UI/Prefabs Buttons/Settings Button.prefab
+    - Assets/Dark UI/Prefabs Buttons/Settings Button.prefab.meta
+    - Assets/Dark UI/Prefabs Buttons/Shop.prefab
+    - Assets/Dark UI/Prefabs Buttons/Shop.prefab.meta
+    - Assets/Dark UI/Prefabs Buttons/Sound.prefab
+    - Assets/Dark UI/Prefabs Buttons/Sound.prefab.meta
+    - Assets/Dark UI/Prefabs Panel.meta
+    - Assets/Dark UI/Prefabs Panel/Facebook Login.prefab
+    - Assets/Dark UI/Prefabs Panel/Facebook Login.prefab.meta
+    - Assets/Dark UI/Prefabs Panel/Inventory Panel.prefab
+    - Assets/Dark UI/Prefabs Panel/Inventory Panel.prefab.meta
+    - Assets/Dark UI/Prefabs Panel/Lose.prefab
+    - Assets/Dark UI/Prefabs Panel/Lose.prefab.meta
+    - Assets/Dark UI/Prefabs Panel/Missions.prefab
+    - Assets/Dark UI/Prefabs Panel/Missions.prefab.meta
+    - Assets/Dark UI/Prefabs Panel/My Info Panel.prefab
+    - Assets/Dark UI/Prefabs Panel/My Info Panel.prefab.meta
+    - Assets/Dark UI/Prefabs Panel/Panel.prefab
+    - Assets/Dark UI/Prefabs Panel/Panel.prefab.meta
+    - Assets/Dark UI/Prefabs Panel/Ranking.prefab
+    - Assets/Dark UI/Prefabs Panel/Ranking.prefab.meta
+    - Assets/Dark UI/Prefabs Panel/Settings.prefab
+    - Assets/Dark UI/Prefabs Panel/Settings.prefab.meta
+    - Assets/Dark UI/Prefabs Panel/Shop.prefab
+    - Assets/Dark UI/Prefabs Panel/Shop.prefab.meta
+    - Assets/Dark UI/Prefabs Panel/Win.prefab
+    - Assets/Dark UI/Prefabs Panel/Win.prefab.meta
+    - Assets/Materials.meta
+    - Assets/Materials/Test.mat
+    - Assets/Materials/Test.mat.meta
+    - Assets/NuGet.config
+    - Assets/NuGet.config.meta
+    - Assets/NuGet.meta
+    - Assets/NuGet/Editor.meta
+    - Assets/NuGet/Editor/NugetForUnity.dll
+    - Assets/NuGet/Editor/NugetForUnity.dll.meta
+    - Assets/NuGet/LICENSE
+    - Assets/NuGet/LICENSE.meta
+    - Assets/NuGet/README.pdf
+    - Assets/NuGet/README.pdf.meta
+    - Assets/NuGet/Resources.meta
+    - Assets/NuGet/Resources/defaultIcon.png
+    - Assets/NuGet/Resources/defaultIcon.png.meta
+    - Assets/Packages.meta
+    - Assets/Packages/CsvHelper.30.0.1.meta
+    - Assets/Packages/CsvHelper.30.0.1/CsvHelper.30.0.1.nupkg
+    - Assets/Packages/CsvHelper.30.0.1/CsvHelper.30.0.1.nupkg.meta
+    - Assets/Packages/CsvHelper.30.0.1/Icon.png
+    - Assets/Packages/CsvHelper.30.0.1/Icon.png.meta
+    - Assets/Packages/CsvHelper.30.0.1/lib.meta
+    - Assets/Packages/CsvHelper.30.0.1/lib/netstandard2.0.meta
+    - Assets/Packages/CsvHelper.30.0.1/lib/netstandard2.0/CsvHelper.dll
+    - Assets/Packages/CsvHelper.30.0.1/lib/netstandard2.0/CsvHelper.dll.meta
+    - Assets/Packages/CsvHelper.30.0.1/lib/netstandard2.0/CsvHelper.xml
+    - Assets/Packages/CsvHelper.30.0.1/lib/netstandard2.0/CsvHelper.xml.meta
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0.meta
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/LICENSE.TXT
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/LICENSE.TXT.meta
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/Microsoft.Bcl.AsyncInterfaces.1.0.0.nupkg
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/Microsoft.Bcl.AsyncInterfaces.1.0.0.nupkg.meta
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/THIRD-PARTY-NOTICES.TXT
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/THIRD-PARTY-NOTICES.TXT.meta
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/lib.meta
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/lib/netstandard2.0.meta
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.dll.meta
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/lib/netstandard2.0/Microsoft.Bcl.AsyncInterfaces.xml.meta
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/useSharedDesignerContext.txt
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/useSharedDesignerContext.txt.meta
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/version.txt
+    - Assets/Packages/Microsoft.Bcl.AsyncInterfaces.1.0.0/version.txt.meta
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0.meta
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/LICENSE.TXT
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/LICENSE.TXT.meta
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/Microsoft.Bcl.HashCode.1.0.0.nupkg
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/Microsoft.Bcl.HashCode.1.0.0.nupkg.meta
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/THIRD-PARTY-NOTICES.TXT
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/THIRD-PARTY-NOTICES.TXT.meta
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/lib.meta
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/lib/netstandard2.0.meta
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/lib/netstandard2.0/Microsoft.Bcl.HashCode.dll
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/lib/netstandard2.0/Microsoft.Bcl.HashCode.dll.meta
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/lib/netstandard2.0/Microsoft.Bcl.HashCode.xml
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/lib/netstandard2.0/Microsoft.Bcl.HashCode.xml.meta
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/useSharedDesignerContext.txt
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/useSharedDesignerContext.txt.meta
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/version.txt
+    - Assets/Packages/Microsoft.Bcl.HashCode.1.0.0/version.txt.meta
+    - Assets/Resources.meta
+    - Assets/Resources/New Lighting Settings.lighting
+    - Assets/Resources/New Lighting Settings.lighting.meta
+    - Assets/Resources/japan3d.obj
+    - Assets/Resources/japan3d.obj.meta
+    - Assets/Scenes.meta
+    - Assets/Scenes/SampleScene.unity
+    - Assets/Scenes/SampleScene.unity.meta
+    - Assets/Scripts.meta
+    - Assets/Scripts/CamEffect.cs
+    - Assets/Scripts/CamEffect.cs.meta
+    - Assets/Scripts/CamMovementManager.cs
+    - Assets/Scripts/CamMovementManager.cs.meta
+    - Assets/Scripts/CamRaycastManager.cs
+    - Assets/Scripts/CamRaycastManager.cs.meta
+    - Assets/Scripts/DataLoader.cs
+    - Assets/Scripts/DataLoader.cs.meta
+    - Assets/Scripts/GameManager.cs
+    - Assets/Scripts/GameManager.cs.meta
+    - Assets/Scripts/LocationViewer.cs
+    - Assets/Scripts/LocationViewer.cs.meta
+    - Assets/Scripts/Models.meta
+    - Assets/Scripts/Models/TokyoCrawlModel.cs
+    - Assets/Scripts/Models/TokyoCrawlModel.cs.meta
+    - Assets/Shaders.meta
+    - Assets/Shaders/camEffect.shader
+    - Assets/Shaders/camEffect.shader.meta
+    - Assets/Shaders/camGlitch.shader
+    - Assets/Shaders/camGlitch.shader.meta
+    - Assets/TextMesh Pro.meta
+    - Assets/TextMesh Pro/Documentation.meta
+    - Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf
+    - Assets/TextMesh Pro/Documentation/TextMesh Pro User Guide 2016.pdf.meta
+    - Assets/TextMesh Pro/Fonts.meta
+    - Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt
+    - Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta
+    - Assets/TextMesh Pro/Fonts/LiberationSans.ttf
+    - Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta
+    - Assets/TextMesh Pro/Resources.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset
+    - Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset.meta
+    - Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt
+    - Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta
+    - Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt
+    - Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta
+    - Assets/TextMesh Pro/Resources/Sprite Assets.meta
+    - Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset
+    - Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta
+    - Assets/TextMesh Pro/Resources/Style Sheets.meta
+    - Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset
+    - Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta
+    - Assets/TextMesh Pro/Resources/TMP Settings.asset
+    - Assets/TextMesh Pro/Resources/TMP Settings.asset.meta
+    - Assets/TextMesh Pro/Shaders.meta
+    - Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader
+    - Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader
+    - Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader
+    - Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_SDF.shader
+    - Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMP_Sprite.shader
+    - Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta
+    - Assets/TextMesh Pro/Shaders/TMPro.cginc
+    - Assets/TextMesh Pro/Shaders/TMPro.cginc.meta
+    - Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc
+    - Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta
+    - Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc
+    - Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta
+    - Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc
+    - Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta
+    - Assets/TextMesh Pro/Sprites.meta
+    - Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt
+    - Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta
+    - Assets/TextMesh Pro/Sprites/EmojiOne.json
+    - Assets/TextMesh Pro/Sprites/EmojiOne.json.meta
+    - Assets/TextMesh Pro/Sprites/EmojiOne.png
+    - Assets/TextMesh Pro/Sprites/EmojiOne.png.meta
+    - Assets/packages.config
+    - Assets/packages.config.meta
+    - Packages/manifest.json
+    - Packages/packages-lock.json
+    - ProjectSettings/AudioManager.asset
+    - ProjectSettings/ClusterInputManager.asset
+    - ProjectSettings/DynamicsManager.asset
+    - ProjectSettings/EditorBuildSettings.asset
+    - ProjectSettings/EditorSettings.asset
+    - ProjectSettings/GraphicsSettings.asset
+    - ProjectSettings/InputManager.asset
+    - ProjectSettings/MemorySettings.asset
+    - ProjectSettings/NavMeshAreas.asset
+    - ProjectSettings/Physics2DSettings.asset
+    - ProjectSettings/PresetManager.asset
+    - ProjectSettings/ProjectSettings.asset
+    - ProjectSettings/ProjectVersion.txt
+    - ProjectSettings/QualitySettings.asset
+    - ProjectSettings/TagManager.asset
+    - ProjectSettings/TimeManager.asset
+    - ProjectSettings/UnityConnectSettings.asset
+    - ProjectSettings/VFXManager.asset
+    - ProjectSettings/VersionControlSettings.asset
+    - 
+    m_Values: 0101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101010101
   RevisionSummary: 
   ChangesSearchValue: 
   SelectedHistoryRevision: 
